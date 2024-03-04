@@ -5,6 +5,7 @@
     --color-accent:#ff3400;
     --color-heading:#1b0760;
     --color-body:#918ca4;
+    --color-body-darkwer:#5c5577
     --color-border: #ccc;
     --border-radius: 30px;
 }
@@ -321,4 +322,45 @@ a{
 .media__image{
     margin-top: 1rem;
     margin-left: 2rem;
+}
+
+/* Quotes */
+.quote{
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darkwer);
+    line-height: 1.3;
+}
+.quote__text::before{
+    content: open-quote;
+}
+.quote__text::after{
+    content: close-quote;
+}
+.quote__author{
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.quote__organisation{
+    color: var(--color-heading);
+    opacity: 0.4;
+    font-size: 2rem;
+    font-style: normal;
+}
+.quote__line{
+    position: relative;
+    bottom: 10px;
+}
+@media screen and (min-width:1024px) {
+    .quote{
+        font-size: 2rem;
+    }
+    .quote__author{
+        font-size: 2.4rem;
+    }
+    .quote__organisation{
+        font-size: 1.6rem;
+    }
 }
