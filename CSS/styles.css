@@ -534,6 +534,7 @@ a{
 }
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 .container{
     max-width: 1140px;
