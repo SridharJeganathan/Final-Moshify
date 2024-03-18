@@ -11,25 +11,29 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <section class="block block--dark block--skewed-left hero">
-        <div class="container grid grid--1x2">
-            <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
-                <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
-                <a href="" class="btn btn--accent btn--stretched">Get Started</a>
-            </header>
-            <picture>
-                <source 
-                  type="image/webp" 
-                  srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
-                />
-                <source 
-                  type="image/png" 
-                  srcset="images/banner.png 1x, images/banner@2x.png 2x"
-                />
-                <img class="hero__image" src="images/banner.png" alt="">
-            </picture>
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>Starting at $9 per month </h2>
+            <p>
+                Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Nobis, atque.
+            </p>
+        </header>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="Enter domain name here...">
+            <button class="btn btn--accent">
+              <svg class="icon icon--white">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>Search</button>
         </div>
+        <ul class="list block-domain__prices">
+            <li><span class="badge badge--secondary">.com $9</span></li>
+            <li>.sg $10</li>
+            <li>.space $11</li>
+            <li>.info $14</li>
+            <li>.net $10</li>
+            <li>.xyz $10</li>
+        </ul>
     </section>
    <script src="js/main.js"></script>
 </body>
