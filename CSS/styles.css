@@ -5,7 +5,7 @@
     --color-accent:#ff3400;
     --color-heading:#1b0760;
     --color-body:#918ca4;
-    --color-body-darkwer:#5c5577
+    --color-body-darker:#5c5577;
     --color-border: #ccc;
     --border-radius: 30px;
 }
@@ -175,7 +175,7 @@ a{
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -251,6 +251,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 .input-group .btn{
     margin: 4px;
@@ -369,7 +370,7 @@ a{
 .quote{
     font-size: 3rem;
     font-style: italic;
-    color: var(--color-body-darkwer);
+    color: var(--color-body-darker);
     line-height: 1.3;
 }
 .quote__text::before{
@@ -436,7 +437,7 @@ a{
     top: 3rem;
     right: -32px;
 }
-@media screen and (min-widht:768px) {
+@media screen and (min-width:768px) {
     .testimonial .quote,
     .testimonial .quote__author{
         font-size: 2.4rem;
@@ -622,10 +623,11 @@ a{
     max-width: 670px;
 }
 .block-domain__prices{
+    color: var(--color-heading);
     display: grid;
     font-size: 2rem;
     font-weight: 600;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     margin: 0 auto;
